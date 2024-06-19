@@ -41,9 +41,9 @@ public class Calci
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                int a1 = Integer.parseInt(tf1.getText());
-                int b1 = Integer.parseInt(tf2.getText());
-                int c1 = a1 + b1;
+                float a1 = Float.parseFloat(tf1.getText());
+                float b1 = Float.parseFloat(tf2.getText());
+                float c1 = a1 + b1;
                 tf3.setText(String.valueOf(c1));
             }
         });
@@ -55,9 +55,9 @@ public class Calci
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                int a2 = Integer.parseInt(tf1.getText());
-                int b2 = Integer.parseInt(tf2.getText());
-                int c2 = a2 - b2;
+                float a2 = Float.parseFloat(tf1.getText());
+                float b2 = Float.parseFloat(tf2.getText());
+                float c2 = a2 - b2;
                 tf3.setText(String.valueOf(c2));
             }
         });
@@ -69,9 +69,9 @@ public class Calci
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                int a3 = Integer.parseInt(tf1.getText());
-                int b3 = Integer.parseInt(tf2.getText());
-                int c3 = a3 * b3;
+                float a3 =Float.parseFloat(tf1.getText());
+                float b3 = Float.parseFloat(tf2.getText());
+                float c3 = a3 * b3;
                 tf3.setText(String.valueOf(c3));
             }
         });
@@ -84,14 +84,14 @@ public class Calci
             public void actionPerformed(ActionEvent e)
             {
 
-                int a4 = Integer.parseInt(tf1.getText());
-                int b4= Integer.parseInt(tf2.getText());
+                float a4 = Float.parseFloat(tf1.getText());
+                float b4= Float.parseFloat(tf2.getText());
                 if(b4==0)
                 {
                     tf3.setText("Undefined");
                 }
                 else {
-                    int c4 = a4 / b4;
+                    float c4 = a4 / b4;
                     tf3.setText(String.valueOf(c4));
                 }
             }
